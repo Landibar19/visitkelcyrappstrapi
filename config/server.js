@@ -3,12 +3,13 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   app: {
     keys: env.array('APP_KEYS'),
+    session: {
+      secret: env('SESSION_SECRET'),
+      keys: ['Landi1', 'Landi2'], 
+    },
   },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
-  session: {
-    secret: env('SESSION_SECRET'),
-    keys: ['Landi1', 'Landi2'], 
-  },
+  
 });
