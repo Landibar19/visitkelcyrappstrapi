@@ -7,4 +7,8 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  session: {
+    secret: env('SESSION_SECRET'),
+    keys: ['Landi1', 'Landi2'], 
+  },
 });
