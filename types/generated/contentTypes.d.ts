@@ -396,6 +396,7 @@ export interface ApiMenuItemMenuItem extends Schema.CollectionType {
     singularName: 'menu-item';
     pluralName: 'menu-items';
     displayName: 'MenuItem';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -403,6 +404,7 @@ export interface ApiMenuItemMenuItem extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     link: Attribute.String;
+    Subitem: Attribute.Component<'menuitem.title', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "menu-item",
     "pluralName": "menu-items",
-    "displayName": "MenuItem"
+    "displayName": "MenuItem",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "Subitem": {
+      "displayName": "Title",
+      "type": "component",
+      "repeatable": true,
+      "component": "menuitem.title"
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_menuitem_menuitemdetails",
+  "info": {
+    "displayName": "menuitemdetails"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
